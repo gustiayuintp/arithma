@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Arithma membantu kamu belajar matematika dengan cara yang lebih masuk akal.">
+	<title>Arithma | Belajar Matematika, Jadi Masuk Akal</title>
+	<link rel="icon" type="image/x-icon" href="asset/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="asset/favicon-32x32.png">
+	<link rel="apple-touch-icon" href="asset/apple-touch-icon.png">
+	<link rel="manifest" href="asset/site.webmanifest">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+	<header>
+		<nav class="container">
+			<a class="logo" href="#beranda" aria-label="Arithma beranda"><img class="logo-mark" src="asset/android-chrome-192x192.png" alt="">Arithma</a>
+			<div class="nav-links"><a href="#beranda">Beranda</a><a href="navigation/materi.html">Materi</a><a href="navigation/latihan.html">Latihan</a><a href="navigation/bantuan.html">Bantuan</a><div class="mobile-auth"><a class="btn btn-login" href="navigation/login.html">Masuk</a><a class="btn btn-gradient" href="navigation/daftar.html">Daftar gratis</a></div></div>
+			<div class="nav-actions"><a class="btn btn-login" href="navigation/login.html">Masuk</a><a class="btn btn-gradient" href="navigation/daftar.html">Daftar gratis</a><button class="menu-button" aria-label="Buka menu" aria-expanded="false"><i data-lucide="menu"></i></button></div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero" id="beranda">
+			<div class="container">
+				<h1>Angka jadi lebih masuk akal.</h1>
+				<p>Materi ringkas, contoh yang dekat dengan keseharian, dan latihan yang bikin kamu benar-benar paham.</p>
+				<div class="hero-buttons"><a class="btn btn-light" href="navigation/materi.html">Mulai belajar <i data-lucide="arrow-up-right" size="17"></i></a><a class="btn btn-hero-outline" href="navigation/latihan.html">Coba latihan <i data-lucide="pen-line" size="17"></i></a></div>
+				<div class="hero-note"><i data-lucide="sparkles" size="15"></i> Dipakai oleh 12.000+ pelajar Indonesia</div>
+			</div>
+		</section>
+
+		<section class="quick-links" id="latihan">
+			<div class="container"><div class="quick-grid">
+				<a class="quick-card" href="navigation/materi.html"><span class="icon-box"><i data-lucide="book-open" size="19"></i></span><h3>Materi belajar</h3><p>Konsep inti, dijelaskan sederhana.</p><i class="arrow" data-lucide="arrow-up-right" size="17"></i></a>
+				<a class="quick-card" href="navigation/latihan.html"><span class="icon-box"><i data-lucide="notebook-pen" size="19"></i></span><h3>Latihan soal</h3><p>Uji pemahamanmu kapan saja.</p><i class="arrow" data-lucide="arrow-up-right" size="17"></i></a>
+				<a class="quick-card" href="#download"><span class="icon-box"><i data-lucide="download" size="19"></i></span><h3>Download PDF</h3><p>Belajar offline lebih praktis.</p><i class="arrow" data-lucide="arrow-up-right" size="17"></i></a>
+				<a class="quick-card" href="#tentang"><span class="icon-box"><i data-lucide="heart-handshake" size="19"></i></span><h3>Tentang kami</h3><p>Kenal lebih dekat dengan Artihma.</p><i class="arrow" data-lucide="arrow-up-right" size="17"></i></a>
+			</div></div>
+		</section>
+
+		<section class="popular" id="materi">
+			<div class="container"><div class="section-heading"><div><h2>Materi populer</h2></div><a class="section-link" href="navigation/materi.html">Lihat semua materi <i data-lucide="arrow-up-right" size="16"></i></a></div>
+				<div class="course-grid">
+					<a class="course-card" href="navigation/detail-materi.html?id=eksponen-logaritma"><div class="course-cover cover-one"><span class="level">KELAS 10</span><span class="cover-number">x²</span></div><div class="course-content"><h3>Eksponen & logaritma</h3><p>Memahami pangkat, akar, dan logaritma melalui pola yang sederhana.</p><div class="course-meta"><span><i data-lucide="play-circle" size="13"></i> 3 video</span><span>35 menit</span></div></div></a>
+					<a class="course-card" href="navigation/detail-materi.html?id=barisan-deret"><div class="course-cover cover-two"><span class="level">KELAS 10</span><span class="cover-number">∑</span></div><div class="course-content"><h3>Barisan & deret</h3><p>Menemukan pola bilangan dan menghitung jumlah deret.</p><div class="course-meta"><span><i data-lucide="play-circle" size="13"></i> 3 video</span><span>32 menit</span></div></div></a>
+					<a class="course-card" href="navigation/detail-materi.html?id=trigonometri"><div class="course-cover cover-three"><span class="level">KELAS 10</span><span class="cover-number">θ</span></div><div class="course-content"><h3>Trigonometri</h3><p>Mengenal perbandingan sudut dan penerapannya dalam segitiga.</p><div class="course-meta"><span><i data-lucide="play-circle" size="13"></i> 3 video</span><span>38 menit</span></div></div></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="proof" id="tentang">
+			<div class="container proof-grid"><div class="testimonial-wrap"><div class="section-heading"><div><h2>Belajar terasa beda.</h2></div></div><div class="testimonial-slider"><div class="testimonial-track"><article class="testimonial-slide"><p class="quote">“Dulu matematika terasa seperti hafalan. Di Arithma, aku jadi paham kenapa jawabannya bisa begitu.”</p><div class="person"><span class="avatar">NA</span><div><strong>Nadia Amalia</strong><span>Siswa kelas 11, Bandung</span></div></div></article><article class="testimonial-slide"><p class="quote">“Penjelasannya singkat tapi ngena. Aku bisa latihan sendiri tanpa langsung buka kunci jawaban.”</p><div class="person"><span class="avatar avatar-orange">RF</span><div><strong>Raka Firmansyah</strong><span>Siswa kelas 10, Jakarta</span></div></div></article><article class="testimonial-slide"><p class="quote">“Bagian visualnya membantu banget untuk geometri. Sekarang aku lebih percaya diri saat ujian.”</p><div class="person"><span class="avatar avatar-cyan">SL</span><div><strong>Salsa Larasati</strong><span>Siswa kelas 11, Surabaya</span></div></div></article></div><div class="slider-controls"><button class="slider-button" type="button" data-testimonial-prev aria-label="Testimoni sebelumnya"><i data-lucide="arrow-left"></i></button><div class="slider-dots" role="tablist" aria-label="Pilih testimoni"><button class="slider-dot is-active" type="button" data-testimonial-dot="0" aria-label="Testimoni 1"></button><button class="slider-dot" type="button" data-testimonial-dot="1" aria-label="Testimoni 2"></button><button class="slider-dot" type="button" data-testimonial-dot="2" aria-label="Testimoni 3"></button></div><button class="slider-button" type="button" data-testimonial-next aria-label="Testimoni berikutnya"><i data-lucide="arrow-right"></i></button></div></div></div><div class="stats"><div class="stat"><strong>12K+</strong><span>Pelajar aktif</span></div><div class="stat"><strong>4.9/5</strong><span>Rating materi</span></div><div class="stat"><strong>180+</strong><span>Materi & latihan</span></div><div class="stat"><strong>92%</strong><span>Merasa lebih paham</span></div></div></div>
+		</section>
+	</main>
+
+	<footer id="download"><div class="container"><div class="footer-main"><div><a class="logo" href="#beranda"><img class="logo-mark" src="asset/android-chrome-192x192.png" alt="">Arithma</a><p class="footer-intro">Teman belajar matematika yang membuat konsep rumit terasa lebih dekat.</p></div><div><h3>Navigasi cepat</h3><div class="footer-links"><a href="#beranda">Beranda</a><a href="navigation/materi.html">Materi</a><a href="navigation/latihan.html">Latihan</a><a href="#tentang">Tentang kami</a></div></div><div><h3>Kontak</h3><div class="contact"><i data-lucide="mail" size="15"></i><span>halo@arithma.id</span></div><div class="contact"><i data-lucide="at-sign" size="15"></i><span>@arithma.id</span></div><div class="contact"><i data-lucide="map-pin" size="15"></i><span>Indonesia</span></div></div><div><h3>Mulai sekarang</h3><p class="footer-cta-copy">Buat akun gratis dan lanjutkan progresmu.</p><a class="btn btn-gradient" href="navigation/daftar.html">Masuk atau daftar <i data-lucide="arrow-up-right" size="16"></i></a></div></div><div class="footer-bottom"><span>© 2026 Arithma. Semua hak dilindungi.</span><span>Belajar pelan-pelan, paham beneran.</span></div></div></footer>
+	<script src="script.js"></script>
+	<script type="module" src="navigation/auth-state.js"></script>
+</body>
+</html>

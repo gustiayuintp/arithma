@@ -1,0 +1,23 @@
+.help-container { width: min(880px, calc(100% - 48px)); }
+.help-hero { position: relative; overflow: hidden; padding: 90px 0 80px; color: #fff; background: linear-gradient(105deg, rgba(5,55,137,.92), rgba(6,108,244,.78)), url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1800&q=85') center/cover; }
+.help-hero .help-container { position: relative; z-index: 1; }
+.help-hero h1 { margin-bottom: 12px; font-size: clamp(2.5rem, 5vw, 4.3rem); }
+.help-hero p { color: #dbeafe; font-size: 1.05rem; }
+.help-hero .btn { width: max-content; min-width: 180px; white-space: nowrap; }
+.about-section p, .contact-section p { color: var(--text-muted); font-size: 1.05rem; }
+.faq-section, .about-section, .contact-section { background: #fff; }
+.faq-section h2, .about-section h2, .contact-section h2 { margin-bottom: 25px; font-size: 2rem; }
+.faq-list { border-top: 1px solid var(--border-color); }
+details { border-bottom: 1px solid var(--border-color); }
+summary { padding: 20px 4px; cursor: pointer; font-family: var(--display); font-size: 1.05rem; font-weight: 700; list-style: none; }
+summary::after { float: right; content: '+'; font-family: var(--body-font); font-size: 1.3rem; }
+details[open] summary::after { content: '−'; }
+details p { max-width: 650px; padding: 0 4px 20px; margin: 0; color: var(--text-muted); }
+.about-section { background: #f1f7ff; }
+.about-section p { max-width: 650px; margin: 0; }
+.contact-section .help-container { display: grid; grid-template-columns: .8fr 1.2fr; gap: 65px; }
+.contact-form { display: grid; gap: 12px; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 13px 14px; border: 1px solid var(--border-color); border-radius: 7px; color: var(--text-main); font: inherit; resize: vertical; }
+.contact-form input:focus, .contact-form textarea:focus { outline: 2px solid #b8d6ff; border-color: var(--primary); }
+#contact-status { margin: 0; color: var(--primary); font-size: .9rem; }
+@media (max-width: 760px) { .help-container { width: min(100% - 32px, 560px); } .contact-section .help-container { grid-template-columns: 1fr; gap: 28px; } }

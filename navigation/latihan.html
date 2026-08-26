@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Pusat latihan interaktif matematika Arithma.">
+	<title>Pusat Latihan | Arithma</title>
+	<link rel="icon" type="image/x-icon" href="../asset/favicon.ico">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="latihan.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="latihan-page">
+	<header><nav class="container"><a class="logo" href="../index.html" aria-label="Arithma beranda"><img class="logo-mark" src="../asset/android-chrome-192x192.png" alt="">Arithma</a><div class="nav-links"><a href="../index.html#beranda">Beranda</a><a href="materi.html">Materi</a><a class="active" href="latihan.html">Latihan</a><a href="bantuan.html">Bantuan</a><div class="mobile-auth"><a class="btn btn-login" href="login.html">Masuk</a><a class="btn btn-gradient" href="daftar.html">Daftar gratis</a></div></div><div class="nav-actions"><a class="btn btn-login" href="login.html">Masuk</a><a class="btn btn-gradient" href="daftar.html">Daftar gratis</a><button class="menu-button" aria-label="Buka menu" aria-expanded="false"><i data-lucide="menu"></i></button></div></nav></header>
+	<main>
+		<section class="practice-hero"><div class="container practice-container"><h1>Pusat Latihan</h1><p>Uji pemahamanmu, satu soal pada satu waktu.</p><div class="practice-search"><i data-lucide="search" size="20"></i><input id="practice-search" type="search" placeholder="Cari latihan, misalnya matriks..." aria-label="Cari latihan"><button class="btn btn-gradient" type="button" id="search-practice">Cari latihan</button></div><div class="practice-filters"><button class="filter-button is-active" type="button" data-practice-category="semua">Semua</button><button class="filter-button" type="button" data-practice-category="aljabar">Aljabar</button><button class="filter-button" type="button" data-practice-category="geometri">Geometri</button><button class="filter-button" type="button" data-practice-category="statistika">Statistika</button></div></div></section>
+		<section class="quiz-section"><div class="container practice-container"><div class="section-heading quiz-heading"><div><h2>Kuis interaktif</h2><p>Pilih tingkat kesulitan, kemudian mulai kuis singkat.</p></div></div><div class="difficulty-switch" aria-label="Pilih tingkat kesulitan"><button class="difficulty is-active" type="button" data-difficulty="mudah">Mudah</button><button class="difficulty" type="button" data-difficulty="sedang">Sedang</button><button class="difficulty" type="button" data-difficulty="sulit">Sulit</button></div><div class="quiz-card"><div class="quiz-progress"><span id="quiz-label">Soal 1 dari 3</span><span id="quiz-difficulty">Mudah</span></div><h3 id="quiz-question">Berapa hasil dari 2 + 3?</h3><div class="quiz-options" id="quiz-options"></div><div class="quiz-footer"><span id="quiz-feedback"></span><button class="btn btn-gradient" id="next-question" type="button">Jawab</button></div></div></div></section>
+		<section class="pdf-section"><div class="container practice-container"><div class="section-heading"><div><h2>Latihan PDF</h2><p id="pdf-helper">Pilih kategori untuk melihat kumpulan soal.</p></div><span id="pdf-count">10 latihan</span></div><div class="pdf-grid" id="pdf-list"></div></div></section>
+	</main>
+	<footer><div class="container"><div class="footer-main"><div><a class="logo" href="../index.html"><img class="logo-mark" src="../asset/android-chrome-192x192.png" alt="">Arithma</a><p class="footer-intro">Teman belajar matematika yang membuat konsep rumit terasa lebih dekat.</p></div><div><h3>Navigasi cepat</h3><div class="footer-links"><a href="../index.html#beranda">Beranda</a><a href="materi.html">Materi</a><a href="latihan.html">Latihan</a><a href="bantuan.html">Bantuan</a></div></div><div><h3>Kontak</h3><div class="contact"><i data-lucide="mail" size="15"></i><span>halo@arithma.id</span></div><div class="contact"><i data-lucide="at-sign" size="15"></i><span>@arithma.id</span></div><div class="contact"><i data-lucide="map-pin" size="15"></i><span>Indonesia</span></div></div><div><h3>Mulai sekarang</h3><p class="footer-cta-copy">Buat akun gratis dan lanjutkan progresmu.</p><a class="btn btn-gradient" href="daftar.html">Masuk atau daftar <i data-lucide="arrow-up-right" size="16"></i></a></div></div><div class="footer-bottom"><span>© 2026 Arithma. Semua hak dilindungi.</span><span>Belajar pelan-pelan, paham beneran.</span></div></div></footer>
+	<script src="latihan.js"></script>
+	<script type="module" src="auth-state.js"></script>
+</body>
+</html>

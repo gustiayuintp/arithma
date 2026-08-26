@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Kumpulan materi belajar matematika Arithma.">
+	<title>Materi Belajar | Arithma</title>
+	<link rel="icon" type="image/x-icon" href="../asset/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="../asset/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="materi.css">
+	<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="materi-page">
+	<header>
+		<nav class="container">
+			<a class="logo" href="../index.html" aria-label="Arithma beranda"><img class="logo-mark" src="../asset/android-chrome-192x192.png" alt="">Arithma</a>
+			<div class="nav-links"><a href="../index.html#beranda">Beranda</a><a class="active" href="materi.html">Materi</a><a href="latihan.html">Latihan</a><a href="bantuan.html">Bantuan</a><div class="mobile-auth"><a class="btn btn-login" href="login.html">Masuk</a><a class="btn btn-gradient" href="daftar.html">Daftar gratis</a></div></div>
+			<div class="nav-actions"><a class="btn btn-login" href="login.html">Masuk</a><a class="btn btn-gradient" href="daftar.html">Daftar gratis</a><button class="menu-button" aria-label="Buka menu" aria-expanded="false"><i data-lucide="menu"></i></button></div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="materi-hero">
+			<div class="container narrow-container">
+				<h1>Materi belajar</h1>
+				<p>Temukan penjelasan matematika yang singkat, runtut, dan mudah kamu ikuti.</p>
+				<form class="search-form" role="search">
+					<i data-lucide="search" size="20"></i>
+					<input id="materi-search" type="search" placeholder="Cari materi, misalnya aljabar..." aria-label="Cari materi">
+					<button class="btn btn-gradient" type="submit">Cari materi</button>
+				</form>
+				<div class="filter-row" aria-label="Filter materi">
+					<button class="filter-button is-active" type="button" data-filter="all">Semua materi</button>
+					<button class="filter-button" type="button" data-filter="kelas-10">Kelas 10</button>
+					<button class="filter-button" type="button" data-filter="kelas-11">Kelas 11</button>
+					<button class="filter-button" type="button" data-filter="kelas-12">Kelas 12</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="category-section">
+			<div class="container narrow-container">
+				<div class="section-heading"><div><h2>Kategori materi</h2></div><p>Pilih topik yang ingin kamu kuasai.</p></div>
+				<div class="category-grid">
+					<button class="category-card category-blue" type="button" data-category="aljabar"><span class="category-icon"><i data-lucide="function-square"></i></span><strong>Aljabar</strong><span>12 materi</span></button>
+					<button class="category-card category-green" type="button" data-category="geometri"><span class="category-icon"><i data-lucide="triangle"></i></span><strong>Geometri</strong><span>9 materi</span></button>
+					<button class="category-card category-orange" type="button" data-category="statistika"><span class="category-icon"><i data-lucide="chart-no-axes-combined"></i></span><strong>Statistika</strong><span>8 materi</span></button>
+					<button class="category-card category-purple" type="button" data-category="kalkulus"><span class="category-icon"><i data-lucide="sigma"></i></span><strong>Kalkulus</strong><span>10 materi</span></button>
+				</div>
+			</div>
+		</section>
+
+		<section class="results-section" id="hasil-materi">
+			<div class="container narrow-container">
+				<div class="section-heading"><div><h2>Semua materi</h2></div><span class="result-count" id="result-count">10 materi ditemukan</span></div>
+				<div class="material-list" id="material-list"></div>
+			<p class="empty-state" id="empty-state" hidden>Materi yang kamu cari belum ditemukan.</p>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container"><div class="footer-main"><div><a class="logo" href="../index.html"><img class="logo-mark" src="../asset/android-chrome-192x192.png" alt="">Arithma</a><p class="footer-intro">Teman belajar matematika yang membuat konsep rumit terasa lebih dekat.</p></div><div><h3>Navigasi cepat</h3><div class="footer-links"><a href="../index.html#beranda">Beranda</a><a href="materi.html">Materi</a><a href="latihan.html">Latihan</a><a href="bantuan.html">Bantuan</a></div></div><div><h3>Kontak</h3><div class="contact"><i data-lucide="mail" size="15"></i><span>halo@arithma.id</span></div><div class="contact"><i data-lucide="at-sign" size="15"></i><span>@arithma.id</span></div><div class="contact"><i data-lucide="map-pin" size="15"></i><span>Indonesia</span></div></div><div><h3>Mulai sekarang</h3><p class="footer-cta-copy">Buat akun gratis dan lanjutkan progresmu.</p><a class="btn btn-gradient" href="daftar.html">Masuk atau daftar <i data-lucide="arrow-up-right" size="16"></i></a></div></div><div class="footer-bottom"><span>© 2024 Arithma. Semua hak dilindungi.</span><span>Belajar pelan-pelan, paham beneran.</span></div></div>
+	</footer>
+	<script src="materi.js"></script>
+	<script type="module" src="auth-state.js"></script>
+</body>
+</html>

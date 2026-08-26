@@ -1,0 +1,43 @@
+.dashboard-page { background: #f8fafc; }
+.dashboard-container { width: min(1040px, calc(100% - 48px)); }
+.dashboard-hero { padding: 62px 0 55px; background: #fff; }
+.welcome { margin: 0 0 8px; color: var(--primary); font-weight: 700; }
+.dashboard-hero h1 { margin-bottom: 10px; font-size: clamp(2.3rem, 5vw, 4rem); }
+.dashboard-subtitle { margin: 0; color: var(--text-muted); font-size: 1.05rem; }
+.account-menu { position: relative; }
+.account-button { display: flex; align-items: center; gap: 9px; border: 0; background: transparent; font: inherit; font-weight: 700; cursor: pointer; }
+.account-avatar, .profile-avatar { display: grid; place-items: center; color: #fff; border-radius: 50%; background: var(--primary); font-weight: 800; }
+.account-avatar { width: 34px; height: 34px; }
+.account-dropdown { position: absolute; top: 45px; right: 0; z-index: 2; display: none; min-width: 150px; padding: 7px; border: 1px solid var(--border-color); border-radius: 8px; background: #fff; box-shadow: 0 12px 26px rgba(15,23,42,.12); }
+.account-menu.open .account-dropdown { display: grid; }
+.account-dropdown a, .account-dropdown button { padding: 9px 10px; border: 0; background: transparent; text-align: left; font: inherit; cursor: pointer; }
+.account-dropdown a:hover, .account-dropdown button:hover { color: var(--primary); background: #f1f7ff; }
+.dashboard-content { padding: 55px 0 95px; }
+.profile-panel { display: flex; align-items: center; gap: 20px; padding: 24px; border: 1px solid var(--border-color); border-radius: 10px; background: #fff; }
+.profile-main { display: flex; align-items: center; gap: 14px; flex: 1; }
+.profile-avatar { width: 54px; height: 54px; font-size: 1.2rem; }
+.profile-main h2 { margin: 0 0 3px; font-size: 1.25rem; }
+.profile-main p { margin: 0; color: var(--text-muted); font-size: .85rem; }
+.profile-status { display: grid; gap: 2px; padding: 0 25px; border-right: 1px solid var(--border-color); border-left: 1px solid var(--border-color); }
+.profile-status span, .profile-status small { color: var(--text-muted); font-size: .78rem; }
+.profile-status strong { color: var(--primary); }
+.dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+.progress-panel, .history-panel { padding: 24px; border: 1px solid var(--border-color); border-radius: 10px; background: #fff; }
+.panel-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.panel-title h2 { margin: 0; font-size: 1.3rem; }
+.panel-title span, .panel-title a { color: var(--text-muted); font-size: .82rem; }
+.panel-title a:hover { color: var(--primary); }
+.chart { display: flex; height: 230px; align-items: end; justify-content: space-around; gap: 10px; padding: 28px 8px 0; border-bottom: 1px solid var(--border-color); }
+.bar { position: relative; width: 28px; height: 45%; min-height: 18px; border-radius: 5px 5px 0 0; background: linear-gradient(#22d3ee, var(--primary)); }
+.bar-38 { height: 38%; }.bar-45 { height: 45%; }.bar-55 { height: 55%; }.bar-62 { height: 62%; }.bar-68 { height: 68%; }.bar-78 { height: 78%; }.bar-86 { height: 86%; }
+.bar span { position: absolute; bottom: -25px; left: 50%; color: var(--text-muted); font-size: .72rem; transform: translateX(-50%); }
+.history-list { display: grid; gap: 5px; margin-top: 20px; }
+.history-list > div { display: flex; align-items: center; gap: 10px; padding: 12px 0; border-bottom: 1px solid var(--border-color); }
+.history-list > div:last-child { border-bottom: 0; }
+.history-icon { display: grid; width: 38px; height: 38px; place-items: center; color: var(--primary); border-radius: 7px; background: #eaf3ff; font-weight: 800; }
+.history-list > div > span:nth-child(2) { flex: 1; }
+.history-list strong, .history-list small { display: block; }
+.history-list strong { font-size: .86rem; }
+.history-list small { color: var(--text-muted); font-size: .75rem; }
+.history-list b { color: var(--primary); font-size: .85rem; }
+@media (max-width: 760px) { .dashboard-container { width: min(100% - 32px, 560px); } .profile-panel { align-items: stretch; flex-direction: column; } .profile-status { padding: 15px 0; border-right: 0; border-bottom: 1px solid var(--border-color); border-left: 0; } .profile-panel .btn { width: 100%; } .dashboard-grid { grid-template-columns: 1fr; } }

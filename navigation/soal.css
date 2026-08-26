@@ -1,0 +1,16 @@
+.soal-hero { padding: 58px 0 55px; background: linear-gradient(135deg, #eaf3ff, #f8fafc 70%); }
+.soal-hero h1 { margin: 9px 0 10px; font-size: clamp(2.3rem, 5vw, 3.8rem); }
+.soal-hero p { margin: 0; color: var(--text-muted); }
+.soal-content { background: #fff; }
+.soal-sheet { width: min(820px, calc(100% - 48px)); }
+.soal-top { display: flex; justify-content: space-between; gap: 20px; padding-bottom: 17px; border-bottom: 1px solid var(--border-color); color: var(--text-muted); font-size: .88rem; }
+.question { padding: 25px 0; border-bottom: 1px solid var(--border-color); }
+.question h3 { margin-bottom: 14px; font-size: 1rem; letter-spacing: -.02em; }
+.option-list { display: grid; gap: 8px; }
+.option { display: flex; align-items: center; gap: 9px; padding: 9px 12px; border: 1px solid var(--border-color); border-radius: 7px; color: var(--text-muted); cursor: pointer; }
+.option:hover { border-color: #9cc6ff; color: var(--text-main); }
+.option input { accent-color: var(--primary); }
+.soal-actions { display: flex; flex-wrap: wrap; gap: 12px; padding: 28px 0 8px; }
+.score { padding: 14px; color: var(--primary); border-radius: 7px; background: #eaf3ff; font-weight: 700; }
+@media print { header, footer, .back-link, .soal-actions { display: none; } .soal-hero { padding: 20px 0; background: #fff; } .soal-content { padding: 0; } }
+@media (max-width: 760px) { .soal-top { display: grid; gap: 4px; } .soal-sheet { width: min(100% - 32px, 560px); } .soal-actions { display: grid; } .soal-actions .btn { width: 100%; } }
